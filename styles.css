@@ -179,3 +179,8 @@ color: #B39336;
         width: 100%;
     }
 }
+@media screen and (max-width: 190px){
+    .title, .title:visited, .title:active, .title:link{
+        font-size: 16pt;
+    }
+}
