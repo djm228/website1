@@ -104,13 +104,14 @@ html, body{
 .onpage, .onpage:link, .onpage:visited{
     text-decoration:underline wavy;
 }
-.navbar{
+#navbar{
     display:flexbox;
     width: 100%;
     height: min-content;
     text-align: center;
     background-color: black;
     justify-content: space-between;
+    overflow: hidden;
 }
 nav ul {
     list-style: none;
@@ -170,6 +171,11 @@ color: #B39336;
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 /*MOBILE VIEW*/
 
