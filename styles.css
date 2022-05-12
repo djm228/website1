@@ -235,6 +235,11 @@ object{
     overflow: hidden;
     position: fixed;
 }
+iframe{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
 /*Custom stuff*/
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
