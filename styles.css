@@ -96,11 +96,13 @@ html, body{
     text-decoration: none;
     color: white;
 }
-.navlink:hover {
+.navlink:hover{
     color: black;
-    fill: black;
     font-weight: 700;
     background-color: white;
+}
+.onpage, .onpage:link, .onpage:visited{
+    text-decoration:underline wavy;
 }
 .navbar{
     display:flexbox;
