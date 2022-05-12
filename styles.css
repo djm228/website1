@@ -36,7 +36,17 @@ html, body{
     object-fit: cover;
 }
 /*Containers & alignment*/
-.container{
+.grid-container{
+    display: grid;
+    height: 100%;
+}
+.content-container{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#header{
     display: flexbox;
     position: relative;
     height: 20%;
@@ -127,6 +137,53 @@ nav ul {
     display: flex;
     justify-content: center;
     }
+/*Bio Bar*/    
+#biobar {
+    background-color: grey;
+    justify-content: center;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 100%;
+    padding-top: 5%;
+}
+.biocontain{
+    width: 100%;
+    padding-top:5px;
+    padding-bottom:5px;
+    display:flexbox;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.bioimg{
+    width: 50%;
+    height: auto;
+}
+.bioinfo{
+    padding-top: 2px;
+    display: inline;
+    font-size: 2.5vmin;
+}
+.navicon {
+    display: block;
+    background-repeat: no-repeat; 
+    background-position: left top;
+    height: 100%;
+    width: auto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-left: -30px;
+}
+#location{
+    background-image: url(images/map-marker.svg);
+}
+#school{
+    background-image: url(images/school.svg);
+}
+ul.biocontain{
+    flex-direction: column;
+    text-align: left;
+    padding-left: 25%;
+}
 /*Text formatting*/
 h1 {
     font-size: 4vmin;
@@ -185,13 +242,8 @@ object{
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 /*MOBILE VIEW*/
-
+/*Mobile Device*/
 @media screen and (max-width: 590px){
     nav ul {
     flex-direction: column;
@@ -203,7 +255,17 @@ object{
         padding-bottom: 10px;
         font-size: 5vmin;
     }
+    #biobar{
+        width: 100%;
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .grid-container{
+        display: block;
+    }
+
 }
+/*Extremely Tiny Screen*/
 @media screen and (max-width: 190px){
     .title, .title:visited, .title:active, .title:link{
         font-size: 16pt;
