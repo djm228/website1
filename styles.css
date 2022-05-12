@@ -15,7 +15,7 @@ html, body{
     background-color: #dedcdc;
     overflow-x: hidden;
 }
-/*Page title and hero image*/
+/*Page title*/
 .title, .title:visited, .title:active, .title:link {
     font-size: 5.5vmax;
     font-weight: 700;
@@ -24,14 +24,10 @@ html, body{
     color: #000000;    
     display: inline;
     text-align: center;
-    text-shadow: -2px 2px 2px white;
-
-   
+    text-shadow: -2px 2px 2px white;   
 }
-.heroimg{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.resume-head{
+    display: none;
 }
 /*Containers & alignment*/
 .grid-container{
@@ -255,7 +251,16 @@ object{
 @media screen and (max-width: 590px){
     nav ul {
     flex-direction: column;
-}
+    }
+    #header{
+        margin-bottom: 0px;
+    }
+    .resume-head{
+        display: flex;
+    }
+    object{
+        overflow: scroll;
+    }
     #navbar {
         border-bottom: solid 2px rgba(0, 0, 0, 0.10);
         margin-bottom: auto;
